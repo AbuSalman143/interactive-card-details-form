@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+:root{
+    /* - Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%) */
+--Red: hsl(0, 100%, 66%);  
+--Light-grayish-violet: hsl(270, 3%, 87%);
+--Dark-grayish-violet: hsl(279, 6%, 55%);
+--Very-dark-violet: hsl(278, 68%, 11%);
+--white:white;
+}
+
+.container{
+    
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+.left-container{
+    /*  */
+    min-height: 100vh;
+    background-image: url(./images/bg-main-desktop.png);
+    width: 40%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    position: absolute;
+    transform: translate(-25%,50%);
+    left: 50%;
+    bottom: 50%;
+}
+.back-card{
+    margin-left: 70px;
+}
+
+.back-card,.front-card{
+    position: relative;
+}
+.back-card .back-card-img,.front-card .front-card-img{
+    height:200px ;
+    
+}
+.logo{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.card-number{
+    color: var(--Light-grayish-violet);
+    font-weight: 500;
+    position: absolute;
+    bottom: 40%;
+    left: 8%;
+    font-size: 24px;
+}
+.card-info{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 70%;
+    color: var(--Light-grayish-violet);
+    bottom: 10%;
+    left: 8%;
+    
+}
+.card-info p,.card-info span{
+    font-size: 14px;
+}
+
+.cvc{
+    position: absolute;
+    top: 43%;
+    right: 10%;
+    color: var(--Light-grayish-violet);
+}
+
+
+.form-container{
+    /* border: 2px solid red; */
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 50%;
+}
+form,.name,.cardNumber{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+}
+.name input,.cardNumber input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Light-grayish-violet);
+}
+.exp-date-cvc{
+    display: flex;
+   
+    gap: 15px;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.date-input{
+    display: flex;
+    justify-content: space-between;
+}
+.date input{
+    width: 45%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Light-grayish-violet);
+}
+
+.cvc-input input{
+
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--Light-grayish-violet);
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Very-dark-violet);
+    color: var(--white);
+    background: var(--Very-dark-violet);
+    cursor: pointer;
+}
+
+label{
+    text-transform: uppercase;
+    
+}
+
+.thaks-container{
+    display: none;
+   
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.thankcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    gap: 10px;
+}
+.thankcard img{
+    width: 50px;
+}
+.thankcard h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+    color: var(--Very-dark-violet);
+}
+
+.thankcard p{
+    font-size: 14px;
+    color: var(--Dark-grayish-violet);
+    margin-bottom: 20px;
+
+}
+
+.thankcard button{
+    width: 120%;
+    height: 40px;
+    padding: 0;
+}
+
+.errormsg{
+    font-size: 10px;
+    color: var(--Red);
+    text-transform:none;
+    display: none;
+}

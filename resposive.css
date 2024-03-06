@@ -1,0 +1,122 @@
+@media screen and (max-width:1200px) {
+    .form-container{
+       justify-content: end;
+    }
+
+    form{
+        width: 65%;
+        
+    }
+}
+@media screen and (max-width:950px) {
+    .left-container{
+       
+        width: 35%;
+       
+    }
+
+    .card{
+        transform: translate(-35%,50%);
+    }
+    .back-card .back-card-img,.front-card .front-card-img{
+        height:auto ;
+        width: 300px;
+    }
+    .back-card{
+        margin-left: 40px;
+    }
+    form{
+       
+        width: 70%;
+        
+    }
+    label{
+        font-size: 10px;
+        
+    }
+    .date label{
+        margin-bottom: 10px;
+    }
+   
+    .cvc-input{
+        display: flex;
+        flex-direction: column;
+        gap: 10PX;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .container{
+        flex-direction: column;
+       
+        min-height: 100vh;
+
+    }
+    .left-container{
+        background-image: url(./images/bg-main-mobile.png);
+        width: 100%;
+        background-repeat:repeat-x;
+        min-height: 40vh;
+       
+    }
+    .card{
+        flex-direction: column-reverse;
+        gap: 0px;
+        transform: translate(-50%);
+        bottom:-10%;
+    }
+    .front-card{
+        margin-left: -70px;
+        margin-top: -75px;
+        z-index: 1;
+       
+    }
+    .back-card{
+        margin-left: 0px;
+    }
+    .form-container{
+       
+        width: 100%;
+       
+        min-height: 60vh;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    form{
+       height: 60vh;
+       justify-content: center;
+    }
+    label{
+        font-size: 14px;
+        font-weight: 600;
+     }
+     .thaks-container{
+      height: 60vh;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .front-card{
+        margin-left: -40px;
+    }
+    form{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .card{
+      
+       width: 90%;
+    }
+    .front-card{
+        margin-left: -15px;
+     }
+    label{
+        font-size: 10px;
+        font-weight: 600;
+     }
+}
